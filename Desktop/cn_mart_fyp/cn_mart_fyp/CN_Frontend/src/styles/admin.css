@@ -1,0 +1,43 @@
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  padding: 0.625rem 1rem;
+  border-radius: 0.5rem;
+  transition: all 200ms;
+}
+
+.sidebar-link:hover {
+  background-color: rgb(55, 65, 81);
+}
+
+.sidebar-link.active {
+  background-color: rgb(55, 65, 81);
+}
+
+.dashboard-card {
+  @apply bg-white rounded-lg shadow p-6 hover:shadow-lg transition-shadow duration-200;
+}
+
+.admin-table {
+  @apply min-w-full divide-y divide-gray-200;
+}
+
+.admin-table th {
+  @apply px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider;
+}
+
+.admin-table td {
+  @apply px-6 py-4 whitespace-nowrap text-sm text-gray-500;
+}
+
+.admin-button {
+  @apply px-4 py-2 rounded-lg text-white transition-colors duration-200;
+}
+
+.admin-button-primary {
+  @apply admin-button bg-blue-600 hover:bg-blue-700;
+}
+
+.admin-button-danger {
+  @apply admin-button bg-red-600 hover:bg-red-700;
+} 

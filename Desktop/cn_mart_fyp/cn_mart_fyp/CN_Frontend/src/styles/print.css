@@ -1,0 +1,35 @@
+@media print {
+  /* Hide all non-essential elements when printing */
+  body * {
+    visibility: hidden;
+  }
+  
+  /* Only show the print container and its contents */
+  #print-container,
+  #print-container * {
+    visibility: visible;
+  }
+  
+  /* Position the print container at the top left of the page */
+  #print-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Hide buttons and navigation during print */
+  .print\:hidden {
+    display: none !important;
+  }
+  
+  /* Ensure text is black (not gray) for better readability */
+  .text-gray-600 {
+    color: #000 !important;
+  }
+  
+  /* Ensure proper page margins */
+  @page {
+    margin: 1cm;
+  }
+}

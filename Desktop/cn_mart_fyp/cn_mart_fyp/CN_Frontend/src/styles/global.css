@@ -1,0 +1,18 @@
+/* Add these styles to your existing global CSS */
+
+/* Navigation link styles */
+.nav-link {
+  @apply px-3 py-2 rounded-md transition-colors duration-200;
+}
+
+.nav-link:hover {
+  @apply bg-green-50;
+}
+
+.mobile-nav-link {
+  @apply block w-full text-left transition-all duration-200;
+}
+
+.mobile-nav-link:active {
+  @apply bg-green-100;
+}
